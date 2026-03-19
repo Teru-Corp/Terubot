@@ -1,0 +1,5 @@
+RaspPi5_Brain/venv/
+venv/
+*.so
+__pycache__/
+.DS_Store

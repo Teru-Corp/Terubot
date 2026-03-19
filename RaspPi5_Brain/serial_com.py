@@ -41,12 +41,10 @@ class SerialController:
             except Exception as e:
                 print(f"[{self.name}] send error on {ser.port}: {e}")
 
-    def send_char(self, c: str):
-        c = c.strip().upper()
-        if len(c) != 1:
-            print(f"[{self.name}] expected single char, got {c}")
-            return
-        self.send_raw_line(c)
+    def send_command(self, cmd: str):
+        """Send a command word (e.g., 'HAPPY', 'LEFT', 'BLINK')."""
+        cmd = cmd.strip().upper()
+        self.send_raw_line(cmd)
 
     def close(self):
         for ser in self.connections:

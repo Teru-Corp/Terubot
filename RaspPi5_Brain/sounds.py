@@ -12,11 +12,11 @@ class SoundPlayer:
 
         # Map command -> list of wav files
         self.map = {
-            "H": ["Happy1.wav"],
-            "S": ["Sad1.wav"],
-            "Y": ["Yes1.wav", "Yes2.wav"],
-            "N": ["No1.wav"],
-            "Q": ["Question2.wav"],
+            "HAPPY": ["Happy1.wav"],
+            "SAD": ["Sad1.wav"],
+            "YES": ["Yes1.wav", "Yes2.wav"],
+            "NO": ["No1.wav"],
+            "QUESTION": ["Question2.wav"],
             "V": ["VICTOR.wav"],
         }
 
